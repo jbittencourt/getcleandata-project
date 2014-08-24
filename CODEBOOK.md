@@ -2,7 +2,7 @@
 
 ======================================================================== 
 
-##ANALISIS STEPS
+##ANALYSIS STEPS
 
 1. Original dataset was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 1. The original labels vector was read from the featues.txt
@@ -34,408 +34,570 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 NOTE: The original concept of the script that partially generated this codebook was developed by  Fred van der zeeuw and commented on Coursera's course forum: https://class.coursera.org/getdata-006/forum/thread?thread_id=26#post-996
 
------------------------------------------------------------- 
-Column position: 1 
+
+### Subject 
 Variable Name: Subject 
-Description:  Number of the Subject in test. Range varies from 1 to 30    
-Class/Type: integer 
+Column position: 1 
+Description:  Number of the Subject in test. Range varies from 1 to 30. 
+Type: integer 
+
 ------------------------------------------------------------ 
-Column position: 2 
+### Activity.Label 
 Variable Name: Activity.Label 
-Description: Label describing which activity subject was performing on momento of test. Possible values are "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
-Class/Type: string 
+Column position: 2 
+Description:  Label describing which activity subject was performing on momento of test. Possible values are "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"   . 
+Type: string 
+
 ------------------------------------------------------------ 
-Column position: 3 
+### tBodyAcc.mean.X 
 Variable Name: tBodyAcc.mean.X 
+Column position: 3 
 Description: The mean value of: The time domain signal of the body acceleration signal   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 4 
+### tBodyAcc.mean.Y 
 Variable Name: tBodyAcc.mean.Y 
+Column position: 4 
 Description: The mean value of: The time domain signal of the body acceleration signal   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 5 
+### tBodyAcc.mean.Z 
 Variable Name: tBodyAcc.mean.Z 
+Column position: 5 
 Description: The mean value of: The time domain signal of the body acceleration signal   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 6 
+### tBodyAcc.std.X 
 Variable Name: tBodyAcc.std.X 
+Column position: 6 
 Description: The standard deviation value of: The time domain signal of the body acceleration signal   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 7 
+### tBodyAcc.std.Y 
 Variable Name: tBodyAcc.std.Y 
+Column position: 7 
 Description: The standard deviation value of: The time domain signal of the body acceleration signal   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 8 
+### tBodyAcc.std.Z 
 Variable Name: tBodyAcc.std.Z 
+Column position: 8 
 Description: The standard deviation value of: The time domain signal of the body acceleration signal   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 9 
+### tGravityAcc.mean.X 
 Variable Name: tGravityAcc.mean.X 
+Column position: 9 
 Description: The mean value of: The time domain signal of the gravity acceleration signal   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 10 
+### tGravityAcc.mean.Y 
 Variable Name: tGravityAcc.mean.Y 
+Column position: 10 
 Description: The mean value of: The time domain signal of the gravity acceleration signal   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 11 
+### tGravityAcc.mean.Z 
 Variable Name: tGravityAcc.mean.Z 
+Column position: 11 
 Description: The mean value of: The time domain signal of the gravity acceleration signal   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 12 
+### tGravityAcc.std.X 
 Variable Name: tGravityAcc.std.X 
+Column position: 12 
 Description: The standard deviation value of: The time domain signal of the gravity acceleration signal   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 13 
+### tGravityAcc.std.Y 
 Variable Name: tGravityAcc.std.Y 
+Column position: 13 
 Description: The standard deviation value of: The time domain signal of the gravity acceleration signal   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 14 
+### tGravityAcc.std.Z 
 Variable Name: tGravityAcc.std.Z 
+Column position: 14 
 Description: The standard deviation value of: The time domain signal of the gravity acceleration signal   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 15 
+### tBodyAccJerk.mean.X 
 Variable Name: tBodyAccJerk.mean.X 
+Column position: 15 
 Description: The mean value of: The time domain signal of the body acceleration signal   body linear acceleration   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 16 
+### tBodyAccJerk.mean.Y 
 Variable Name: tBodyAccJerk.mean.Y 
+Column position: 16 
 Description: The mean value of: The time domain signal of the body acceleration signal   body linear acceleration   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 17 
+### tBodyAccJerk.mean.Z 
 Variable Name: tBodyAccJerk.mean.Z 
+Column position: 17 
 Description: The mean value of: The time domain signal of the body acceleration signal   body linear acceleration   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 18 
+### tBodyAccJerk.std.X 
 Variable Name: tBodyAccJerk.std.X 
+Column position: 18 
 Description: The standard deviation value of: The time domain signal of the body acceleration signal   body linear acceleration   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 19 
+### tBodyAccJerk.std.Y 
 Variable Name: tBodyAccJerk.std.Y 
+Column position: 19 
 Description: The standard deviation value of: The time domain signal of the body acceleration signal   body linear acceleration   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 20 
+### tBodyAccJerk.std.Z 
 Variable Name: tBodyAccJerk.std.Z 
+Column position: 20 
 Description: The standard deviation value of: The time domain signal of the body acceleration signal   body linear acceleration   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 21 
+### tBodyGyro.mean.X 
 Variable Name: tBodyGyro.mean.X 
+Column position: 21 
 Description: The mean value of: The time domain signal of the on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 22 
+### tBodyGyro.mean.Y 
 Variable Name: tBodyGyro.mean.Y 
+Column position: 22 
 Description: The mean value of: The time domain signal of the on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 23 
+### tBodyGyro.mean.Z 
 Variable Name: tBodyGyro.mean.Z 
+Column position: 23 
 Description: The mean value of: The time domain signal of the on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 24 
+### tBodyGyro.std.X 
 Variable Name: tBodyGyro.std.X 
+Column position: 24 
 Description: The standard deviation value of: The time domain signal of the on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 25 
+### tBodyGyro.std.Y 
 Variable Name: tBodyGyro.std.Y 
+Column position: 25 
 Description: The standard deviation value of: The time domain signal of the on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 26 
+### tBodyGyro.std.Z 
 Variable Name: tBodyGyro.std.Z 
+Column position: 26 
 Description: The standard deviation value of: The time domain signal of the on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 27 
+### tBodyGyroJerk.mean.X 
 Variable Name: tBodyGyroJerk.mean.X 
+Column position: 27 
 Description: The mean value of: The time domain signal of the body angular velocity   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 28 
+### tBodyGyroJerk.mean.Y 
 Variable Name: tBodyGyroJerk.mean.Y 
+Column position: 28 
 Description: The mean value of: The time domain signal of the body angular velocity   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 29 
+### tBodyGyroJerk.mean.Z 
 Variable Name: tBodyGyroJerk.mean.Z 
+Column position: 29 
 Description: The mean value of: The time domain signal of the body angular velocity   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 30 
+### tBodyGyroJerk.std.X 
 Variable Name: tBodyGyroJerk.std.X 
+Column position: 30 
 Description: The standard deviation value of: The time domain signal of the body angular velocity   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 31 
+### tBodyGyroJerk.std.Y 
 Variable Name: tBodyGyroJerk.std.Y 
+Column position: 31 
 Description: The standard deviation value of: The time domain signal of the body angular velocity   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 32 
+### tBodyGyroJerk.std.Z 
 Variable Name: tBodyGyroJerk.std.Z 
+Column position: 32 
 Description: The standard deviation value of: The time domain signal of the body angular velocity   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 33 
+### tBodyAccMag.mean 
 Variable Name: tBodyAccMag.mean 
+Column position: 33 
 Description: The mean value of: The time domain signal of the body acceleration signal   magnitude of linear acceleration three-dimensional signals   on n axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 34 
+### tBodyAccMag.std 
 Variable Name: tBodyAccMag.std 
+Column position: 34 
 Description: The standard deviation value of: The time domain signal of the body acceleration signal   magnitude of linear acceleration three-dimensional signals   on d axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 35 
+### tGravityAccMag.mean 
 Variable Name: tGravityAccMag.mean 
+Column position: 35 
 Description: The mean value of: The time domain signal of the gravity acceleration signal   magnitude of angular velocity  three-dimensional signals   on n axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 36 
+### tGravityAccMag.std 
 Variable Name: tGravityAccMag.std 
+Column position: 36 
 Description: The standard deviation value of: The time domain signal of the gravity acceleration signal   magnitude of angular velocity  three-dimensional signals   on d axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 37 
+### tBodyAccJerkMag.mean 
 Variable Name: tBodyAccJerkMag.mean 
+Column position: 37 
 Description: The mean value of: The time domain signal of the body acceleration signal   body linear acceleration   magnitude of linear acceleration three-dimensional signals   on n axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 38 
+### tBodyAccJerkMag.std 
 Variable Name: tBodyAccJerkMag.std 
+Column position: 38 
 Description: The standard deviation value of: The time domain signal of the body acceleration signal   body linear acceleration   magnitude of linear acceleration three-dimensional signals   on d axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 39 
+### tBodyGyroMag.mean 
 Variable Name: tBodyGyroMag.mean 
+Column position: 39 
 Description: The mean value of: The time domain signal of the magnitude of angular velocity  three-dimensional signals   on n axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 40 
+### tBodyGyroMag.std 
 Variable Name: tBodyGyroMag.std 
+Column position: 40 
 Description: The standard deviation value of: The time domain signal of the magnitude of angular velocity  three-dimensional signals   on d axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 41 
+### tBodyGyroJerkMag.mean 
 Variable Name: tBodyGyroJerkMag.mean 
+Column position: 41 
 Description: The mean value of: The time domain signal of the body angular velocity   magnitude of angular velocity  three-dimensional signals   on n axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 42 
+### tBodyGyroJerkMag.std 
 Variable Name: tBodyGyroJerkMag.std 
+Column position: 42 
 Description: The standard deviation value of: The time domain signal of the body angular velocity   magnitude of angular velocity  three-dimensional signals   on d axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 43 
+### fBodyAcc.mean.X 
 Variable Name: fBodyAcc.mean.X 
+Column position: 43 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 44 
+### fBodyAcc.mean.Y 
 Variable Name: fBodyAcc.mean.Y 
+Column position: 44 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 45 
+### fBodyAcc.mean.Z 
 Variable Name: fBodyAcc.mean.Z 
+Column position: 45 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 46 
+### fBodyAcc.std.X 
 Variable Name: fBodyAcc.std.X 
+Column position: 46 
 Description: The standard deviation value of: The frequency domain signals of the body acceleration signal   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 47 
+### fBodyAcc.std.Y 
 Variable Name: fBodyAcc.std.Y 
+Column position: 47 
 Description: The standard deviation value of: The frequency domain signals of the body acceleration signal   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 48 
+### fBodyAcc.std.Z 
 Variable Name: fBodyAcc.std.Z 
+Column position: 48 
 Description: The standard deviation value of: The frequency domain signals of the body acceleration signal   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 49 
+### fBodyAcc.meanFreq.X 
 Variable Name: fBodyAcc.meanFreq.X 
+Column position: 49 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 50 
+### fBodyAcc.meanFreq.Y 
 Variable Name: fBodyAcc.meanFreq.Y 
+Column position: 50 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 51 
+### fBodyAcc.meanFreq.Z 
 Variable Name: fBodyAcc.meanFreq.Z 
+Column position: 51 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 52 
+### fBodyAccJerk.mean.X 
 Variable Name: fBodyAccJerk.mean.X 
+Column position: 52 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   body linear acceleration   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 53 
+### fBodyAccJerk.mean.Y 
 Variable Name: fBodyAccJerk.mean.Y 
+Column position: 53 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   body linear acceleration   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 54 
+### fBodyAccJerk.mean.Z 
 Variable Name: fBodyAccJerk.mean.Z 
+Column position: 54 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   body linear acceleration   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 55 
+### fBodyAccJerk.std.X 
 Variable Name: fBodyAccJerk.std.X 
+Column position: 55 
 Description: The standard deviation value of: The frequency domain signals of the body acceleration signal   body linear acceleration   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 56 
+### fBodyAccJerk.std.Y 
 Variable Name: fBodyAccJerk.std.Y 
+Column position: 56 
 Description: The standard deviation value of: The frequency domain signals of the body acceleration signal   body linear acceleration   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 57 
+### fBodyAccJerk.std.Z 
 Variable Name: fBodyAccJerk.std.Z 
+Column position: 57 
 Description: The standard deviation value of: The frequency domain signals of the body acceleration signal   body linear acceleration   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 58 
+### fBodyAccJerk.meanFreq.X 
 Variable Name: fBodyAccJerk.meanFreq.X 
+Column position: 58 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   body linear acceleration   on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 59 
+### fBodyAccJerk.meanFreq.Y 
 Variable Name: fBodyAccJerk.meanFreq.Y 
+Column position: 59 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   body linear acceleration   on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 60 
+### fBodyAccJerk.meanFreq.Z 
 Variable Name: fBodyAccJerk.meanFreq.Z 
+Column position: 60 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   body linear acceleration   on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 61 
+### fBodyGyro.mean.X 
 Variable Name: fBodyGyro.mean.X 
+Column position: 61 
 Description: The mean value of: The frequency domain signals of the on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 62 
+### fBodyGyro.mean.Y 
 Variable Name: fBodyGyro.mean.Y 
+Column position: 62 
 Description: The mean value of: The frequency domain signals of the on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 63 
+### fBodyGyro.mean.Z 
 Variable Name: fBodyGyro.mean.Z 
+Column position: 63 
 Description: The mean value of: The frequency domain signals of the on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 64 
+### fBodyGyro.std.X 
 Variable Name: fBodyGyro.std.X 
+Column position: 64 
 Description: The standard deviation value of: The frequency domain signals of the on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 65 
+### fBodyGyro.std.Y 
 Variable Name: fBodyGyro.std.Y 
+Column position: 65 
 Description: The standard deviation value of: The frequency domain signals of the on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 66 
+### fBodyGyro.std.Z 
 Variable Name: fBodyGyro.std.Z 
+Column position: 66 
 Description: The standard deviation value of: The frequency domain signals of the on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 67 
+### fBodyGyro.meanFreq.X 
 Variable Name: fBodyGyro.meanFreq.X 
+Column position: 67 
 Description: The mean value of: The frequency domain signals of the on X axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 68 
+### fBodyGyro.meanFreq.Y 
 Variable Name: fBodyGyro.meanFreq.Y 
+Column position: 68 
 Description: The mean value of: The frequency domain signals of the on Y axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 69 
+### fBodyGyro.meanFreq.Z 
 Variable Name: fBodyGyro.meanFreq.Z 
+Column position: 69 
 Description: The mean value of: The frequency domain signals of the on Z axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 70 
+### fBodyAccMag.mean 
 Variable Name: fBodyAccMag.mean 
+Column position: 70 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   magnitude of linear acceleration three-dimensional signals   on n axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 71 
+### fBodyAccMag.std 
 Variable Name: fBodyAccMag.std 
+Column position: 71 
 Description: The standard deviation value of: The frequency domain signals of the body acceleration signal   magnitude of linear acceleration three-dimensional signals   on d axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 72 
+### fBodyAccMag.meanFreq 
 Variable Name: fBodyAccMag.meanFreq 
+Column position: 72 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   magnitude of linear acceleration three-dimensional signals   on q axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 73 
+### fBodyBodyAccJerkMag.mean 
 Variable Name: fBodyBodyAccJerkMag.mean 
+Column position: 73 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   body linear acceleration   magnitude of linear acceleration three-dimensional signals   on n axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 74 
+### fBodyBodyAccJerkMag.std 
 Variable Name: fBodyBodyAccJerkMag.std 
+Column position: 74 
 Description: The standard deviation value of: The frequency domain signals of the body acceleration signal   body linear acceleration   magnitude of linear acceleration three-dimensional signals   on d axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 75 
+### fBodyBodyAccJerkMag.meanFreq 
 Variable Name: fBodyBodyAccJerkMag.meanFreq 
+Column position: 75 
 Description: The mean value of: The frequency domain signals of the body acceleration signal   body linear acceleration   magnitude of linear acceleration three-dimensional signals   on q axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 76 
+### fBodyBodyGyroMag.mean 
 Variable Name: fBodyBodyGyroMag.mean 
+Column position: 76 
 Description: The mean value of: The frequency domain signals of the magnitude of angular velocity  three-dimensional signals   on n axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 77 
+### fBodyBodyGyroMag.std 
 Variable Name: fBodyBodyGyroMag.std 
+Column position: 77 
 Description: The standard deviation value of: The frequency domain signals of the magnitude of angular velocity  three-dimensional signals   on d axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 78 
+### fBodyBodyGyroMag.meanFreq 
 Variable Name: fBodyBodyGyroMag.meanFreq 
+Column position: 78 
 Description: The mean value of: The frequency domain signals of the magnitude of angular velocity  three-dimensional signals   on q axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 79 
+### fBodyBodyGyroJerkMag.mean 
 Variable Name: fBodyBodyGyroJerkMag.mean 
+Column position: 79 
 Description: The mean value of: The frequency domain signals of the body angular velocity   magnitude of angular velocity  three-dimensional signals   on n axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 80 
+### fBodyBodyGyroJerkMag.std 
 Variable Name: fBodyBodyGyroJerkMag.std 
+Column position: 80 
 Description: The standard deviation value of: The frequency domain signals of the body angular velocity   magnitude of angular velocity  three-dimensional signals   on d axis     
-Class/Type: numeric 
+Type: numeric 
+
 ------------------------------------------------------------ 
-Column position: 81 
+### fBodyBodyGyroJerkMag.meanFreq 
 Variable Name: fBodyBodyGyroJerkMag.meanFreq 
+Column position: 81 
 Description: The mean value of: The frequency domain signals of the body angular velocity   magnitude of angular velocity  three-dimensional signals   on q axis     
-Class/Type: numeric 
+Type: numeric 
+
