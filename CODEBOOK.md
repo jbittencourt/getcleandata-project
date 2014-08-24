@@ -1,8 +1,38 @@
 ## CODEBOOK 
 
 ======================================================================== 
+
+##ANALISIS STEPS
+
+1. Original dataset was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+1. The original labels vector was read from the featues.txt
+1. A list of the variables we were interested(mean and standard deviation) in was computed by filtering all field name by "mean" and "std" strings. Angle variables were excluded from list by the filtering proccess: angle(...)
+2. The two original groups provided by the original datasets (test and traning) were manipulated separately in order to create a clearer script.
+3. Each dataset was manipulated following the steps bellow:
+3.1. The subjects, activity and tests variables values were loaded separately
+3.2. Appropriated labels were applied to each column. Column labels were loaded from the provided featues.txt file.
+3.3. The subjects, activity and tests were binded into a single dataset
+4. Training and Test sets were consolidated (row added in this order)  into a single tidy dataset. 
+5. Consolidated dataset was "melted" by Subject and Activity (Activity.Label)
+6. A summary dataset was created by computing the mean of all observation variables aggregated by "Subject" and "Activity.Label"
+
+##DATASET
+
+* The final dataset has 81 columns. *
+Columns 1 and 2 repserents the Subject and Activity respectivetely. 
+* Columns 3 to 81 are variables with the mean of the observations. 
+* Each line represents 1 subject in 1 activity
+
+
+## ORIGINAL FEATURES
+
+More information of the original dataset codebook can be downloaded from 
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 ## FEATURES 
 
+NOTE: The original concept of the script that partially generated this codebook was developed by  Fred van der zeeuw and commented on Coursera's course forum: https://class.coursera.org/getdata-006/forum/thread?thread_id=26#post-996
 
 ------------------------------------------------------------ 
 Column position: 1 
@@ -12,8 +42,8 @@ Class/Type: integer
 ------------------------------------------------------------ 
 Column position: 2 
 Variable Name: Activity.Label 
-Description: Label describing which activity subject was performing on momento of test. Possible values are
-Class/Type: factor 
+Description: Label describing which activity subject was performing on momento of test. Possible values are "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
+Class/Type: string 
 ------------------------------------------------------------ 
 Column position: 3 
 Variable Name: tBodyAcc.mean.X 

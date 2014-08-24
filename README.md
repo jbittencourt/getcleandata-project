@@ -60,3 +60,9 @@ After retrieving a consolidated data.frame from get.tidy.dataset(), run_analysis
 
 As a final step, run_analysis() returns this new dataset of aggregated data.
 
+
+CodeBook
+==============
+
+Please refer to CODEBOOK.md file for reference.
+
