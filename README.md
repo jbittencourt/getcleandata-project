@@ -20,9 +20,10 @@ Running the Script
 ==================
 
 1. Clone the script from github:  % git clone https://github.com/jbittencourt/getcleandata-project
-2. Download and Unzip the original dataset from the link above in the same directory you clone the project. If the dataset isn't in the same folder, the script will stop with an error
+2. Download and Unzip the original dataset from the link above in the same directory you cloned the project. If the dataset isn't in the same folder, the script will stop with an error
 3. Enter R 
 4. In R, using the setwd command, set the working directory to the same folder where you cloned the project
+4. Load the script file in R: Source('./run_analysis.R')
 5. In R, run the run_analysis() script
 6. The run_analysis() script will return a data frame . For information about the data frame, see CodeBook.md file in this repo
 
