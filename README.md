@@ -23,10 +23,16 @@ Running the Script
 2. Download and Unzip the original dataset from the link above in the same directory you cloned the project. If the dataset isn't in the same folder, the script will stop with an error
 3. Enter R 
 4. In R, using the setwd command, set the working directory to the same folder where you cloned the project
-4. Load the script file in R: Source('./run_analysis.R')
-5. In R, run the run_analysis() script
+4. Load the script file in R: `source('./run_analysis.R')`
+5. In R, run the `run_analysis()` function
 6. The run_analysis() script will return a data frame . For information about the data frame, see CodeBook.md file in this repo
+7. The function doesn't write the data frame to a file. It returns it to the user so he can do further processing or write it in the format he chooses. If you want to view the processed data do as follows in RStudio:
 
+```
+source('./run_analysis.R')
+data <- run_analysis()
+View(data)
+```
 
 Implementation
 ==============
